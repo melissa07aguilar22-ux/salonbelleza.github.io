@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hello Kitty Beauty Salon</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- LOADER -->
+
+<div id="loader">
+
+<img src="img/hello-kitty-dance.gif" alt="Hello Kitty">
+
+<h2>Bienvenida Hermosa 🎀</h2>
+
+</div>
+
+<!-- FLORES -->
+
+<div id="sakura-container"></div>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+🎀 Hello Kitty Beauty
+</div>
+
+<button class="menu-btn">
+☰
+</button>
+
+<nav>
+
+<ul class="menu">
+
+<li>
+<a href="#inicio">Inicio</a>
+</li>
+
+<li>
+<a href="nosotros.html">Nosotros</a>
+</li>
+
+<li class="dropdown">
+
+<a href="#" class="servicios-btn">
+Servicios ✨
+</a>
+
+<ul class="submenu">
+
+<li><a href="cabello.html">💇 Cabello</a></li>
+
+<li><a href="cejas.html">👁️ Cejas</a></li>
+
+<li><a href="pestanas.html">✨ Pestañas</a></li>
+
+<li><a href="manicure.html">💅 Manicure</a></li>
+
+<li><a href="pedicure.html">🦶 Pedicure</a></li>
+
+</ul>
+
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="inicio">
+
+<h1>Tu Belleza Con Un Toque Pofesional Y De Calidad. 🎀</h1>
+
+<p>
+UN AMBIENTE LLENO DE ESTILO Y ELEGANCIA.
+</p>
+
+</section>
+
+<!-- CARRUSEL -->
+
+<section class="slider">
+
+<div class="slides">
+
+<div class="slide">
+<img src="img/promo1.png" alt="">
+</div>
+
+<div class="slide">
+<img src="img/promo2.png" alt="">
+</div>
+
+<div class="slide">
+<img src="img/promo3.png" alt="">
+</div>
+<div class="slide">
+<img src="img/promo4.png" alt="">
+</div>
+</div>
+
+</section>
+
+<!-- SERVICIOS -->
+<h1 class="fire-title">
+🔥 PROMOCIONES 🔥
+</h1>
+
+<section class="categorias">
+
+<a href="#"
+
+class="card"
+
+data-img="img/c1.jpg"
+
+data-title="Balayage Rosado"
+
+data-description="Incluye decoloración, matizado, hidratación profunda y peinado profesional."
+
+data-price="$45.00">
+
+<img src="img/c1.jpg" alt="">
+
+<div class="card-info">
+
+<h3>Balayage Rosado</h3>
+
+<p>
+Coloración moderna con acabado brillante.
+</p>
+
+</div>
+
+</a>
+
+<a href="#"
+
+class="card"
+
+data-img="img/cejas.jpg"
+
+data-title="Diseño de Cejas"
+
+data-description="Perfilado, depilación y diseño personalizado según tu rostro.">
+
+<img src="img/cejas.jpg" alt="">
+
+<div class="card-info">
+
+<h3>Diseño de Cejas</h3>
+
+<p>
+Diseño personalizado y natural.
+</p>
+
+</div>
+
+</a>
+
+<a href="#"
+
+class="card"
+
+data-img="img/pestanas.jpg"
+
+data-title="Extensiones de Pestañas"
+
+data-description="Aplicación profesional para una mirada elegante y definida.">
+
+<img src="img/pestanas.jpg" alt="">
+
+<div class="card-info">
+
+<h3>Extensiones de Pestañas</h3>
+
+<p>
+Mayor volumen y longitud.
+</p>
+
+</div>
+
+</a>
+<a href="#"
+
+class="card"
+
+data-img="img/manicure.jpg"
+
+data-title="Uñas Acrilicas"
+
+data-description="Uñas con un estilo natural y elegante.">
+
+<img src="img/manicure.jpg" alt="">
+
+<div class="card-info">
+
+<h3>Uñas Acrilicas</h3>
+<p>
+Uñas con un estilo natural y elegante.</p>
+
+</div>
+
+</a>
+
+<a href="#"
+
+class="card"
+
+data-img="img/pie.jpg"
+
+data-title="Spa para Pies"
+
+data-description="Exfoliación, hidratación profunda y esmaltado.">
+
+<img src="img/pie.jpg" alt="">
+
+<div class="card-info">
+
+<h3>Spa para Pies</h3>
+
+<p>
+Relajación y cuidado completo.
+</p>
+
+</div>
+
+</a>
+
+</section>
+
+
+
+
+<!-- WHATSAPP -->
+
+<a href="https://wa.me/50377777777"
+
+target="_blank"
+
+class="whatsapp">
+
+📞
+
+</a>
+
+<!-- MODAL -->
+
+<div class="modal" id="modal">
+
+<div class="modal-content">
+
+<span class="close-modal">&times;</span>
+
+<img id="modalImg">
+
+<h2 id="modalTitle"></h2>
+
+<p id="modalDescription"></p>
+
+<h3 id="modalPrice"></h3>
+
+<a
+id="modalWhatsapp"
+class="modal-btn"
+target="_blank">
+
+<img src="img/kitty-icon.png" alt="">
+
+Quiero más información de esta promoción
+
+</a>
+
+</div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+
+</html>
