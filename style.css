@@ -1040,17 +1040,15 @@ display:flex;
 justify-content:center;
 align-items:center;
 
-gap:10px;
+gap:12px;
 
-width:90%;
+padding:10px;
 
-margin:0 auto 25px;
-
-padding:15px;
-
-border-radius:50px;
+border-radius:15px;
 
 text-decoration:none;
+
+font-weight:600;
 
 background:
 linear-gradient(
@@ -1060,8 +1058,6 @@ linear-gradient(
 );
 
 color:white;
-
-font-weight:600;
 
 transition:.4s;
 
