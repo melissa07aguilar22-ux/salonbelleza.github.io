@@ -641,7 +641,80 @@ color:#ff8fc7;
 cursor:pointer;
 }
 
+/* RESPONSIVE */
 
+@media(max-width:991px){
+.hero h1{font-size:2.8rem;}
+.pinterest{column-count:3;}
+.slide img{height:420px;}
+}
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+}
+
+nav.active{
+display:block;
+}
+
+.menu{
+flex-direction:column;
+margin-top:15px;
+}
+
+.submenu{
+position:relative;
+top:auto;
+opacity:1;
+visibility:visible;
+transform:none;
+display:none;
+width:100%;
+}
+
+.dropdown:hover .submenu{
+display:block;
+}
+
+.hero h1{
+font-size:2rem;
+}
+
+.slide img{
+height:280px;
+}
+
+.pinterest{
+column-count:2;
+}
+
+.categorias{
+grid-template-columns:1fr;
+}
+}
+
+@media(max-width:480px){
+
+.hero h1{
+font-size:1.6rem;
+}
+
+.slide img{
+height:220px;
+}
+
+.pinterest{
+column-count:1;
+padding:15px;
+}
+}
 /* ==========================
    NOSOTROS
 ========================== */
@@ -1058,3 +1131,95 @@ left:150%;
 
 }
 
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.servicios-page h1{
+
+font-size:2.3rem;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.servicios-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.service-card img{
+
+height:280px;
+
+}
+
+}
+.btn-whatsapp{
+
+padding:10px 15px;
+
+font-size:.85rem;
+
+gap:8px;
+
+}
+
+.btn-whatsapp img{
+
+width:22px;
+height:22px;
+
+}
+.service-card{
+
+max-width:350px;
+
+margin:auto;
+
+}
+
+.service-info h3{
+
+font-size:1rem;
+
+}
+
+.service-info p{
+
+font-size:.85rem;
+
+}
+
+
+@media(max-width:480px){
+
+.servicios-page{
+
+padding:120px 15px 60px;
+
+}
+
+.servicios-page h1{
+
+font-size:1.8rem;
+
+}
+
+.service-card img{
+
+height:240px;
+
+}
+
+.service-info{
+
+padding:20px;
+
+}
+
+}
