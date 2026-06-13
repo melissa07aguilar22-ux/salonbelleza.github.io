@@ -601,6 +601,7 @@ z-index:999;
 
 .sakura{
 position:fixed;
+z-index:0;
 top:-20px;
 width:18px;
 height:18px;
@@ -618,9 +619,20 @@ transform:translateY(110vh) rotate(360deg);
 
 .heart{
 position:fixed;
+z-index:0;
 bottom:-30px;
 pointer-events:none;
 animation:floatHeart 8s linear forwards;
+}
+header,
+.hero,
+.slider,
+.fire-title,
+.categorias,
+.servicios-page,
+.whatsapp{
+position:relative;
+z-index:2;
 }
 
 @keyframes floatHeart{
@@ -1042,9 +1054,9 @@ align-items:center;
 
 gap:12px;
 
-padding:10px;
+padding:15px;
 
-border-radius:15px;
+border-radius:50px;
 
 text-decoration:none;
 
@@ -1147,51 +1159,36 @@ font-size:2.3rem;
 @media(max-width:768px){
 
 .servicios-grid{
-
 grid-template-columns:1fr;
-
 }
 
 .service-card img{
-
 height:280px;
-
 }
 
-}
 .btn-whatsapp{
-
 padding:10px 15px;
-
 font-size:.85rem;
-
 gap:8px;
-
 }
 
 .btn-whatsapp img{
-
 width:22px;
 height:22px;
-
 }
+
 .service-card{
-
 max-width:350px;
-
 margin:auto;
-
 }
 
 .service-info h3{
-
 font-size:1rem;
-
 }
 
 .service-info p{
-
 font-size:.85rem;
+}
 
 }
 
@@ -1220,6 +1217,23 @@ height:240px;
 
 padding:20px;
 
+}
+
+}
+@media(max-width:768px){
+
+.fire-title{
+font-size:2.5rem;
+line-height:1.1;
+padding:0 15px;
+}
+
+}
+
+@media(max-width:480px){
+
+.fire-title{
+font-size:2rem;
 }
 
 }
