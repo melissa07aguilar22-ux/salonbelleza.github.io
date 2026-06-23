@@ -317,7 +317,7 @@ whatsappLinks.forEach(link=>{
 link.addEventListener("contextmenu",(e)=>{
 
 navigator.clipboard.writeText(
-"+50361207787"
+"+50377777777"
 );
 
 });
