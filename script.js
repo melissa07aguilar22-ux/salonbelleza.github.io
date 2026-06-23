@@ -205,8 +205,8 @@ Math.random()*100 + "vw";
 heart.style.fontSize =
 (Math.random()*20+15) + "px";
 
-document.body.appendChild(heart);
-
+document.getElementById("floating-hearts")
+.appendChild(heart);
 setTimeout(()=>{
 
 heart.remove();
