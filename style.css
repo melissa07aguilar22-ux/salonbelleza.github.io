@@ -1147,25 +1147,48 @@ font-size:2.4rem;
 
 }
 
-
 @media(max-width:768px){
 
 nav{
+    position:fixed;
+    top:90px;
+    right:-100%;
+    width:260px;
+    height:calc(100vh - 90px);
+
+    background:#11111a;
+
     display:flex;
     flex-direction:column;
-    position:fixed;
-    top:80px;
-    right:-100%;
-    width:280px;
-    height:100vh;
-    background:#11111a;
-    transition:.4s;
+
+    transition:.4s ease;
     z-index:999;
-    padding:20px;
+
+    padding:30px 20px;
 }
 
 nav.mobile-open{
     right:0;
+}
+
+nav ul{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    list-style:none;
+}
+
+nav ul li{
+    width:100%;
+}
+
+nav ul li a{
+    display:block;
+    font-size:1.2rem;
+    color:white;
+    text-decoration:none;
+    padding:12px 0;
+    border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .menu-btn{
@@ -1173,11 +1196,6 @@ nav.mobile-open{
     font-size:2rem;
     cursor:pointer;
     z-index:1000;
-}
-
-nav ul{
-    flex-direction:column;
-    gap:20px;
 }
 
 }
