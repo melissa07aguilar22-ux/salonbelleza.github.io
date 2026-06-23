@@ -1149,15 +1149,32 @@ font-size:2.4rem;
 
 @media(max-width:768px){
 
+@media(max-width:768px){
+
 nav{
+    display:flex;
+    flex-direction:column;
+    position:fixed;
+    top:80px;
+    right:-100%;
+    width:280px;
+    height:100vh;
+    background:#11111a;
+    transition:.4s;
+    z-index:999;
+    padding:20px;
+}
 
-display:none;
-
+nav.mobile-open{
+    right:0;
 }
 
 .menu-btn{
-
-display:block;
+    display:block;
+    font-size:2rem;
+    cursor:pointer;
+    z-index:1000;
+}
 
 }
 
