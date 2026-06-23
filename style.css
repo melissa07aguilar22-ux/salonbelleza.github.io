@@ -1153,13 +1153,15 @@ nav{
     position:fixed;
     top:90px;
     right:-100%;
+
     width:260px;
-    height:calc(100vh - 90px);
+    height:100vh;
 
-    background:#11111a;
+    background:rgba(10,10,20,.55);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
 
-    display:flex;
-    flex-direction:column;
+    border-left:1px solid rgba(255,255,255,.1);
 
     transition:.4s ease;
     z-index:999;
