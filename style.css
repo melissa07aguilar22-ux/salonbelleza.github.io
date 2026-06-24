@@ -393,25 +393,30 @@ max-width:900px;
 
 }
 
-.hero-badge{
+.hero-kitty{
+    margin:20px 0;
+}
 
-display:inline-block;
+.hero-kitty img{
+    width:180px;
+    max-width:100%;
+    height:auto;
+    animation:kittyFloat 3s ease-in-out infinite;
+}
 
-padding:10px 25px;
+@keyframes kittyFloat{
 
-border-radius:50px;
+    0%{
+        transform:translateY(0);
+    }
 
-background:rgba(255,110,180,.15);
+    50%{
+        transform:translateY(-10px);
+    }
 
-border:1px solid rgba(255,110,180,.35);
-
-color:var(--pink-light);
-
-font-size:.9rem;
-
-margin-bottom:25px;
-
-backdrop-filter:blur(10px);
+    100%{
+        transform:translateY(0);
+    }
 
 }
 
