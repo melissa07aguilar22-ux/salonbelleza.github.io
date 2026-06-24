@@ -175,49 +175,6 @@ overlay.remove();
 });
 
 /* ====================================
-FLOATING HEARTS
-==================================== */
-
-function createHeart(){
-
-const heart =
-document.createElement("div");
-
-heart.className =
-"floating-heart";
-
-const icons = [
-
-"💖",
-"🌸",
-"🎀",
-"✨",
-"🌺"
-
-];
-
-heart.innerHTML =
-icons[Math.floor(Math.random()*icons.length)];
-
-heart.style.left =
-Math.random()*100 + "vw";
-
-heart.style.fontSize =
-(Math.random()*20+15) + "px";
-
-(document.getElementById("floating-hearts") || document.body)
-.appendChild(heart);
-setTimeout(()=>{
-
-heart.remove();
-
-},12000);
-
-}
-
-setInterval(createHeart,1800);
-
-/* ====================================
 PARALLAX HERO
 ==================================== */
 
